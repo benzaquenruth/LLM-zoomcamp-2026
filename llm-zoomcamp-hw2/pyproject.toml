@@ -1,0 +1,20 @@
+[project]
+name = "llm-zoomcamp-hw2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gitsource>=0.0.5",
+    "minsearch>=0.1.1",
+    "numpy>=2.5.0",
+    "onnxruntime>=1.27.0",
+    "tokenizers>=0.23.1",
+    "tqdm>=4.68.3",
+]
+
+[dependency-groups]
+dev = [
+    "huggingface-hub>=1.21.0",
+    "jupyter>=1.1.1",
+]
