@@ -2,6 +2,7 @@
 
 <img width="2912" height="1464" alt="Gemini_Generated_Image_xgr4lbxgr4lbxgr4" src="https://github.com/user-attachments/assets/02ac9eca-785d-4f38-b6ef-d344443c1631" />
 
+This repository contains my work, notes, notebooks, and homework assignments from the LLM Zoomcamp 2026 course by DataTalksClub.
 
 
 From LLM basics to a production-ready AI assistant in 10 weeks
