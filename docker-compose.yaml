@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:17
+    env_file:
+      - 05-monitoring/.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - postgres
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - 05-monitoring/.env
+    environment:
+      - POSTGRES_HOST=postgres
+    ports:
+      - "8501:8501"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
+  grafana_data:
