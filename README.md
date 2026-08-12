@@ -8,3 +8,5 @@ This repository contains my work, notes, notebooks, and homework assignments fro
 
 From LLM basics to a production-ready AI assistant in 10 weeks
 Learn Retrieval-Augmented Generation, vector search, embeddings, AI agents, function calling, evaluation, monitoring, hybrid search, reranking, and more - all in a open-source, hands-on course by DataTalks.Club.
+
+Link for the course GitHub repository : https://github.com/DataTalksClub/llm-zoomcamp
